@@ -116,7 +116,7 @@ def generate_setup_table(op_pt, A, B, seed=24, as_int=True):
 
     return setup
 
-def save_st_data_from_files(directory, data_source, n_j, n_m, data_suffix, plant_depend_st):
+def save_st_data_from_files(directory, data_source, n_j, n_m, data_type, plant_depend_st):
     """
         load all files within the specified directory save吧？
     :param directory: the directory of files
@@ -142,13 +142,17 @@ def save_st_data_from_files(directory, data_source, n_j, n_m, data_suffix, plant
                 setup_time_matrix = generate_setup_table(op_pt, 0.1, 0.5)
             else:
                 setup_time_matrix = generate_setup_time_matrix(op_pt)
-            dirs = f'./data/{data_source}/st_{n_j}x{n_m}'
-            # dirs = f'./data/data_train_vali/{data_source}/st_{n_j}x{n_m}'
-            if not os.path.exists(dirs):
-                os.makedirs(dirs)
 
-            np.savetxt(f'./data/{data_source}/st_{n_j}x{n_m}/st_'+f, setup_time_matrix[0], fmt='%d')
-            # np.savetxt(f'./data/data_train_vali/{data_source}/st_{n_j}x{n_m}/st_' + f, setup_time_matrix,fmt='%d')
+            if data_type == 'test':
+                dirs = f'./data/{data_source}/st_{n_j}x{n_m}'
+                if not os.path.exists(dirs):
+                    os.makedirs(dirs)
+                np.savetxt(f'./data/{data_source}/st_{n_j}x{n_m}/st_' + f, setup_time_matrix[0], fmt='%d')
+            elif data_type == 'vali':
+                dirs = f'./data/data_train_vali/{data_source}/st_{n_j}x{n_m}'
+                if not os.path.exists(dirs):
+                    os.makedirs(dirs)
+                np.savetxt(f'./data/data_train_vali/{data_source}/st_{n_j}x{n_m}/st_' + f, setup_time_matrix,fmt='%d')
 
 if __name__ == '__main__':
     data_source = 'SD2'
@@ -156,6 +160,7 @@ if __name__ == '__main__':
     n_m = 5
     data_suffix = 'mix'
     plant_depend_st = False
+    data_type = 'test'
 
     if data_source == 'SD1':
         data_name = f'{n_j}x{n_m}'
@@ -163,4 +168,4 @@ if __name__ == '__main__':
         data_name = f'{n_j}x{n_m}{strToSuffix(data_suffix)}'
     test_data_path = f'./data/{data_source}/{data_name}'
 
-    save_st_data_from_files(test_data_path, data_source, n_j, n_m, data_suffix, plant_depend_st)
+    save_st_data_from_files(test_data_path, data_source, n_j, n_m, data_type, plant_depend_st)

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9413c8e-9fd8-4ba5-9f32-bfb36a23da10" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_genernation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_genernation.iml" afterDir="false" />
+    <list default="true" id="d9413c8e-9fd8-4ba5-9f32-bfb36a23da10" name="更改" comment="update in 28Sep">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDST_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDST_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/param.py" beforeDir="false" afterPath="$PROJECT_DIR$/common_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.SDST_utils.executor": "Debug",
+    "Python.SDST_utils.executor": "Run",
     "Python.data_utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -133,24 +129,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759038079729</updated>
-      <workItem from="1759038080809" duration="2308000" />
+      <workItem from="1759038080809" duration="4866000" />
     </task>
+    <task id="LOCAL-00001" summary="update in 28Sep">
+      <option name="closed" value="true" />
+      <created>1759040678463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759040678463</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update in 28Sep" />
+    <option name="LAST_COMMIT_MESSAGE" value="update in 28Sep" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SDST_utils.py</url>
-          <line>149</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SDST_utils.py</url>
-          <line>165</line>
+          <line>170</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
