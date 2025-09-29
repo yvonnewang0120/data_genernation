@@ -1,4 +1,4 @@
-# FJSP-DRL
+# HANRL
 
 This repository is the data generation implementation of the paper “[Cyber-Physical Internet Enabled Hierarchical Attention Network based Reinforcement Learning for Order Dispatch in Fast Fashion Manufacturing]”.
 
